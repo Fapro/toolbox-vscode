@@ -12,7 +12,7 @@ while [[ $# -gt 0 ]] ; do
     else
         args+=("$1")
     fi
-    shift
+    shiftr
 done
 
 if $build || ! podman image inspect toolbox-vscode-test  >/dev/null 2>&1 ; then
